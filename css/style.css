@@ -414,19 +414,6 @@ nav {
   background-color: red;
 }
 
-#choise_title,
-#choise_subtitle,
-#inverse_title,
-#inverse_subtitle {
-  color: #fff;
-}
-
-#choise_label,
-#inverse_label {
-  background-color: #fff;
-  color: black;
-}
-
 .choise {
   position: relative;
   min-height: 912px;
@@ -454,6 +441,15 @@ nav {
   z-index: 2;
   display: block;
   margin: 0 auto;
+}
+
+.choise_title, .choise_subtitle {
+  color: #fff;
+}
+
+.choise_label {
+  background-color: #fff;
+  color: black;
 }
 
 .xs-choise {
@@ -534,6 +530,15 @@ nav {
   color: #1fbad6;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.allTheWorld_label {
+  background-color: #fff;
+  color: black;
+}
+
+.allTheWorld_title, .allTheWorld_subtitle {
+  color: #fff;
 }
 
 .footer {
@@ -696,6 +701,45 @@ nav {
   .sub_header {
     font-size: 30px;
   }
+  .footer {
+    position: relative;
+    min-height: 220px;
+    padding: 14px 0 30px 0;
+  }
+  .footer img {
+    padding: 5px;
+  }
+  .footer_sotial {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+  }
+  .footer_ul_1 {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    left: 25%;
+  }
+  .footer_ul_2 {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    left: 10%;
+  }
+  .mobile_item {
+    width: 230px;
+    height: 270px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -790,6 +834,71 @@ nav {
   .promo_header {
     font-size: 40px;
     line-height: 45px;
+  }
+  .footer {
+    position: relative;
+    min-height: 220px;
+    padding: 14px 0 30px 0;
+  }
+  .footer img {
+    padding: 5px;
+  }
+  .footer_sotial {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+  }
+  .footer_ul_1 {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    left: 25%;
+  }
+  .footer_ul_2 {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    left: 10%;
+  }
+  .choise {
+    position: relative;
+    min-height: 612px;
+    padding: 25px 0 25px 0;
+    background: url("../bg/Rectangle_small.png") center center/cover no-repeat;
+    z-index: 1;
+  }
+  .choise_imgCar {
+    display: none;
+  }
+  .choise_footer {
+    color: #fff;
+    font-style: light;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .subtitle {
+    display: none;
+  }
+  .xs-choise {
+    z-index: 2;
+    display: block;
+    margin: 0 auto;
+  }
+  .mobile_item {
+    width: 320px;
+    height: 280px;
   }
 }
 
@@ -927,25 +1036,54 @@ nav {
   .allTheWorld_title {
     font-size: 25px;
   }
+  .allTheWorld_subtitle {
+    color: #fff;
+    z-index: 7;
+  }
   .footer {
     position: relative;
     min-height: 220px;
     padding: 14px 0 30px 0;
   }
+  .footer img {
+    padding: 5px;
+  }
+  .footer_link_1 {
+    font-size: 11px;
+  }
+  .footer_link_2 {
+    font-size: 8px;
+  }
   .footer_sotial {
     position: relative;
     display: block;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .footer_ul_1 {
-    position: relative;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     left: 25%;
   }
   .footer_ul_2 {
-    position: relative;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     left: 10%;
+  }
+  .mobile_item {
+    width: 280px;
+    height: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */
