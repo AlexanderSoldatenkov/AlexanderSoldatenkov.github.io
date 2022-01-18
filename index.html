@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="shortcut icon" href="icons/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Hello, world!</title>
 </head>
 
@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </header>
 
@@ -246,9 +246,9 @@
 
   <section class="choise">
     <div class="container">
-      <div class="label" id="choise_label">Возможности</div>
-      <div class="title choise_title_1" id="choise_title">выбор - отличная штука!</div>
-      <div class="subtitle" id="choise_subtitle">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
+      <div class="label choise_label">Возможности</div>
+      <div class="title choise_title">выбор - отличная штука!</div>
+      <div class="subtitle choise_subtitle">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
       <div class="choise_img_box">
 
         <!-- <img src="icons/uberX.png" alt="uberX" class="choise_uberX"> -->
@@ -331,9 +331,9 @@
 
   <section class="allTheWorld">
     <div class="container">
-      <div class="label " id="inverse_label">города</div>
-      <div class="title allTheWorld_title" id="inverse_title">по всему миру</div>
-      <div class="subtitle allTheWorld_subtitle" id="inverse_subtitle">Мы в вашем городе и по всему миру</div>
+      <div class="label allTheWorld_label" >города</div>
+      <div class="title allTheWorld_title" >по всему миру</div>
+      <div class="subtitle allTheWorld_subtitle" >Мы в вашем городе и по всему миру</div>
 
     </div>
     <a href="#" class="allTheWorld_descrLink">посмотреть все города</a>
@@ -349,24 +349,25 @@
     <div class="container">
 
       <hr class="footer_line">
-      <ul class="footer_menu ">
-        <li> <a href="#" class="footer_link_1">на главную &nbsp &nbsp &nbsp </a> </li>
-        <li> <a href="#" class="footer_link_1">города &nbsp &nbsp &nbsp </a> </li>
-        <li> <a href="#" class="footer_link_1">для водителей</a> </li>
-      </ul>
-      <ul class="footer_menu ">
-        <li> <a href="#" class="footer_link_2">центр поддержки &nbsp</a> </li>
-        <li> <a href="#" class="footer_link_2">вакансии &nbsp</a> </li>
-        <li> <a href="#" class="footer_link_2">разработчики &nbsp</a> </li>
-        <li> <a href="#" class="footer_link_2">блог &nbsp</a> </li>
-        <li> <a href="#" class="footer_link_2">о нас</a> </li>
-      </ul>
-      <ul class="footer_menu ">
-        <li><a href="#" class="footer_link_3">Русский</a></li>
+      <div>
+        <ul class="footer_menu ">
+          <li> <a href="#" class="footer_link_1">на главную &nbsp &nbsp &nbsp </a> </li>
+          <li> <a href="#" class="footer_link_1">города &nbsp &nbsp &nbsp </a> </li>
+          <li> <a href="#" class="footer_link_1">для водителей</a> </li>
+        </ul>
+        <ul class="footer_menu ">
+          <li> <a href="#" class="footer_link_2">центр поддержки &nbsp</a> </li>
+          <li> <a href="#" class="footer_link_2">вакансии &nbsp</a> </li>
+          <li> <a href="#" class="footer_link_2">разработчики &nbsp</a> </li>
+          <li> <a href="#" class="footer_link_2">блог &nbsp</a> </li>
+          <li> <a href="#" class="footer_link_2">о нас</a> </li>
+        </ul>
+        <ul class="footer_menu ">
+          <li><a href="#" class="footer_link_3">Русский</a></li>
 
-      </ul>
-
-
+        </ul>
+      </div>
+      <div>
       <div class="footer_sotial">
         <ul class="footer_ul_1">
           <li><a href="#" class="footer_sotial_icons_1"><i class="fab fa-facebook-f footer_sotial_img"></i></a></li>
@@ -375,16 +376,71 @@
           <li><a href="#" class="footer_sotial_icons_1"><i class="fab fa-instagram footer_sotial_img"></i></a></li>
         </ul>
         <ul class="footer_ul_2">
-          <li><a href="#" class="footer_sotial_icons_2"><img src="icons/google_play.png" alt="" class="footer_img"></a></li>
+          <li><a href="#" class="footer_sotial_icons_2"><img src="icons/google_play.png" alt="" class="footer_img"></a>
+          </li>
           <li><a href="#" class="footer_sotial_icons_2"><img src="icons/apple.png" alt="" class="footer_img"></a></li>
           <li><a href="#" class="footer_sotial_icons_2"><img src="icons/windows.png" alt="" class="footer_img"></a></li>
         </ul>
-        
-      </div>
 
+      </div>
+    </div>
     </div>
 
   </footer>
+  
+  <!-- <footer>
+    <div class="footer_divider"></div>
+    <div class="footer_wrapper">
+        
+        <div>
+            <div class="footer_social">
+                <a href="#" class="footer_social_item">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer_social_item">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer_social_item">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="footer_social_item">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="footer_links">
+                <div class="footer_links_main">
+                    <a href="#">на главную</a>
+                    <a href="#">города</a>
+                    <a href="#">для водителей</a>
+                </div>
+                <div class="footer_links_sub">
+                    <a href="#">центр поддержки</a>
+                    <a href="#">вакансии</a>
+                    <a href="#">разработчики</a>
+                    <a href="#">блог</a>
+                    <a href="#">о нас</a>
+                </div>
+                <a href="#" class="footer_links_lang">Русский</a>
+            </div>
+        </div>
+        <div>
+            <div class="footer_mobile">
+                <a href="#">
+                    <img src="img/app_store.png" alt="App Store">
+                </a>
+                <a href="#">
+                    <img src="img/google_play.png" alt="Google play">
+                </a>
+                <a href="#">
+                    <img src="img/windows_store.png" alt="Windows store">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
   <script src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/28acb69e44.js" crossorigin="anonymous"></script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
