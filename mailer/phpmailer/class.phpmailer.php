@@ -1326,8 +1326,7 @@ class PHPMailer
                 default:
                     $sendMethod = $this->Mailer.'Send';
                     if (method_exists($this, $sendMethod)) {
-                        // return $this->$sendMethod($this->MIMEHeader, $this->MIMEBody);
-                        return "!!!"
+                        return $this->$sendMethod($this->MIMEHeader, $this->MIMEBody);
                     }
 
                     return $this->mailSend($this->MIMEHeader, $this->MIMEBody);
