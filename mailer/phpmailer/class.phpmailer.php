@@ -1202,7 +1202,7 @@ class PHPMailer
             }
             return $this->postSend();
         } catch (phpmailerException $exc) {
-            $this->mailHeader = '';
+            $this->mailHeader = 'Content-type:text/html;charset=UTF-8';
             $this->setError($exc->getMessage());
             if ($this->exceptions) {
                 throw $exc;
