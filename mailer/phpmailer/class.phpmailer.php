@@ -1202,7 +1202,7 @@ class PHPMailer
             }
             return $this->postSend();
         } catch (phpmailerException $exc) {
-            $this->mailHeader = 'Content-type:text/html;charset=UTF-8';
+            $this->mailHeader = '';
             $this->setError($exc->getMessage());
             if ($this->exceptions) {
                 throw $exc;
@@ -1326,7 +1326,8 @@ class PHPMailer
                 default:
                     $sendMethod = $this->Mailer.'Send';
                     if (method_exists($this, $sendMethod)) {
-                        return $this->$sendMethod($this->MIMEHeader, $this->MIMEBody);
+                        // return $this->$sendMethod($this->MIMEHeader, $this->MIMEBody);
+                        return "!!!"
                     }
 
                     return $this->mailSend($this->MIMEHeader, $this->MIMEBody);
