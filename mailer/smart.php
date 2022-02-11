@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $text = $_POST['text'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer(true);                     //Without  (true)!!!
+$mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -17,7 +17,7 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'xspikyx@gmail.com';                 // Наш логин
 $mail->Password = 'oneutjnkckjabnug';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to  587
+$mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('xspikyx@gmail.com', 'AlexanderSoldatenkov');   // От кого письмо 
 $mail->addAddress('xspikyx@gmail.com');     // Add a recipient
