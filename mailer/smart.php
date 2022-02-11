@@ -17,7 +17,7 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'xspikyx@gmail.com';                 // Наш логин
 $mail->Password = 'oneutjnkckjabnug';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to  465!!!
+$mail->Port = 465;                                    // TCP port to connect to  587
  
 $mail->setFrom('xspikyx@gmail.com', 'AlexanderSoldatenkov');   // От кого письмо 
 $mail->addAddress('xspikyx@gmail.com');     // Add a recipient
