@@ -187,7 +187,7 @@ table {
   }
 }
 
-.header__background {
+.header {
   top: 0;
   min-height: 115px;
   width: 100%;
@@ -200,7 +200,7 @@ table {
   border-color: #00b9ff
 }
 
-.navigation__name {
+.navigation__changeLanguage {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -211,7 +211,7 @@ table {
   text-decoration: none
 }
 
-.navigation__name_slash {
+.navigation__changeLanguage span {
   margin-left: 7px;
   margin-right: 7px;
   font-weight: 700;
@@ -228,7 +228,7 @@ table {
   color: #0075a1
 }
 
-.navigation__name_wrapper {
+.navigation__changeLanguage_wrapper {
   display: inline-flex;
   margin-right: 32px
 }
@@ -243,7 +243,7 @@ table {
   height: 100%
 }
 
-.navigation__logo_align {
+.navigation__rightBar_align {
   display: flex;
   flex-direction: row
 }
@@ -272,15 +272,15 @@ table {
   text-decoration: none !important
 }
 
-.navigation__menu_item {
+.navigation__menu_block {
   margin-left: 15px
 }
 
-.navigation__menu_item:nth-child(5) {
-  margin-left: 0px
+.navigation__menu_block:nth-child(5) {
+  margin-left: 15px
 }
 
-.navigation__menu_item a:hover {
+.navigation__menu_block a:hover {
   color: #ff0072
 }
 
@@ -290,7 +290,7 @@ table {
   line-height: 25px;
   text-transform: uppercase;
   color: #00b9ff;
-  text-decoration: none !important
+  text-decoration: none
 }
 
 .navigation__menu_link a {
