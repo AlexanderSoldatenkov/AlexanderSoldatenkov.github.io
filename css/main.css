@@ -3,6 +3,7 @@ body {
   font-style: normal
 }
 
+
 @media(min-width: 1920px) {
   .container {
     max-width: 1440px
@@ -51,15 +52,6 @@ body {
   }
 }
 
-.padding-left-right {
-  padding-left: 16px;
-  padding-right: 16px
-}
-
-.margin-left-right {
-  margin-left: auto;
-  margin-right: auto
-}
 
 .header {
   top: 0;
@@ -82,29 +74,24 @@ body {
   display: flex;
   align-items: center;
   color: #ff0072;
-  text-decoration: none
+  text-decoration: none;
+  justify-content: center;
+  width: 35px
 }
 
-.navigation__change-language span {
-  margin-left: 7px;
-  margin-right: 7px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  color: #ff0072;
-  text-decoration: none
+.navigation__change-language:nth-child(1) {
+  border-right: 2px solid #ff0072;
+  height: 16px
 }
 
 .navigation__name:hover {
   color: #0075a1
 }
 
-.navigation__change-language_wrapper {
+.navigation__change-language-wrapper {
   display: inline-flex;
-  margin-right: 32px
+  margin-right: 32px;
+  align-items: center
 }
 
 .navigation__logo {
@@ -129,7 +116,7 @@ body {
   width: 85vw
 }
 
-.navigation__menu {
+.menu {
   list-style-type: none;
   text-decoration: none;
   margin-top: 10px;
@@ -147,11 +134,7 @@ body {
 }
 
 .navigation__item {
-  margin-left: 15px
-}
-
-.navigation__item:nth-child(5) {
-  margin-left: 15px
+  margin-right: 15px
 }
 
 .navigation__item a:hover {
@@ -195,17 +178,13 @@ body {
   background-color: #ddd
 }
 
-.dropdown:hover .dropdown-content {
+.navigation__item:nth-child(5):hover .dropdown-content {
   display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #000;
   text-transform: uppercase
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41
 }
 
 .hamburger {
@@ -217,11 +196,11 @@ body {
   cursor: pointer
 }
 
-.hamburger:hover .hamburger_hover {
+.hamburger:hover .hamburger__hover {
   background-color: #ff0072
 }
 
-.hamburger_hover {
+.hamburger__hover {
   display: block;
   background-color: #000;
   width: 30px;
