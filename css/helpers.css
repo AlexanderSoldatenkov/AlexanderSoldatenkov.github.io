@@ -1,9 +1,9 @@
-.padding-left-right-px-16 {
+.px-16 {
   padding-left: 16px;
   padding-right: 16px
 }
 
-.margin-left-right-mx-auto {
+.mx-auto {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto
 }
