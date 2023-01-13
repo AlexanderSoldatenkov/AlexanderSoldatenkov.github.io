@@ -79,19 +79,17 @@ body {
   width: 35px
 }
 
-.navigation__change-language:nth-child(1) {
-  border-right: 2px solid #ff0072;
-  height: 16px
-}
 
 .navigation__name:hover {
   color: #0075a1
 }
 
-.navigation__change-language-wrapper {
-  display: inline-flex;
-  margin-right: 32px;
-  align-items: center
+.navigation__change-language:nth-child(1)::before {
+  content: "";
+  border-right: 2px solid $second-font-color;
+  height: 16px;
+  position: relative;
+  left: 30px;
 }
 
 .navigation__logo {
