@@ -76,7 +76,8 @@ body {
   color: #ff0072;
   text-decoration: none;
   justify-content: center;
-  width: 35px
+  width: 35px;
+  margin-top: 10px;
 }
 
 
@@ -86,8 +87,10 @@ body {
 
 .navigation__change-language:nth-child(1)::before {
   content: "";
-  border-right: 2px solid $second-font-color;
+  /* border-right: 2px solid $second-font-color; */
   height: 16px;
+  width: 2px;
+  background-color: $second-font-color;
   position: relative;
   left: 30px;
 }
@@ -261,9 +264,6 @@ body {
     display: none
   }
 
-  .hamburger {
-    margin-left: 0
-  }
 }
 
 @media(max-width: 400px) {
