@@ -90,7 +90,7 @@ body {
   /* border-right: 2px solid $second-font-color; */
   height: 16px;
   width: 2px;
-  background-color: $second-font-color;
+  background-color: #FF0072;
   position: relative;
   left: 30px;
 }
