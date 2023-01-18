@@ -209,7 +209,7 @@ body {
   margin-top: 8px
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
 
 
   .navigation__list {
@@ -243,7 +243,7 @@ body {
   }
 }
 
-@media (max-width: 1081px) {
+@media (max-width: 1105px) {
   .navigation__link {
     font-size: 10px;
   }
