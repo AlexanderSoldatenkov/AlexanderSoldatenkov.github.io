@@ -251,7 +251,7 @@ body {
 
 }
 
-@media (max-width: 1013px) {
+@media (max-width: 1034px) {
   .navigation__list {
     display: none;
   }
