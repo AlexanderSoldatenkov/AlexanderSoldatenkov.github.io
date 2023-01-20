@@ -77,9 +77,8 @@ body {
   text-decoration: none;
   justify-content: center;
   width: 35px;
-  margin-top: 10px;
+  margin-top: 10px
 }
-
 
 .navigation__name:hover {
   color: #0075a1
@@ -87,12 +86,11 @@ body {
 
 .navigation__change-language:nth-child(1)::before {
   content: "";
-  /* border-right: 2px solid $second-font-color; */
   height: 16px;
   width: 2px;
-  background-color: #FF0072;
+  background-color: #ff0072;
   position: relative;
-  left: 30px;
+  left: 30px
 }
 
 .navigation__logo {
@@ -209,76 +207,184 @@ body {
   margin-top: 8px
 }
 
-@media (max-width: 1350px) {
+.hiddenmenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 11;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .6s
+}
 
+.hiddenmenu.active {
+  left: 0;
+  visibility: visible;
+  opacity: 1
+}
 
+.hiddenmenu__block {
+  position: relative;
+  transition: all .6s;
+  width: 345px;
+  background-color: #000;
+  height: 100%;
+  padding-top: 140px;
+  padding-left: 40px;
+  z-index: 10
+}
+
+.hiddenmenu__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer
+}
+
+.hiddenmenu__close:hover {
+  color: #cb4544
+}
+
+.hiddenmenu__list {
+  list-style-type: none;
+  padding-left: 35px
+}
+
+.hiddenmenu__link {
+  position: relative;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 15px
+}
+
+.hiddenmenu__link::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 1px solid #e5e5e5;
+  transition: all .6s
+}
+
+.hiddenmenu__link:hover::before {
+  background-color: #00b9ff
+}
+
+.hiddenmenu__link a {
+  color: #e5e5e5;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: none
+}
+
+.hiddenmenu__link a:hover {
+  color: #00b9ff
+}
+
+.hiddenmenu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+  opacity: .75;
+  z-index: 9
+}
+
+@media(max-width: 767px) {
+  .hiddenmenu__block {
+    width: 293px;
+    padding-left: 33px
+  }
+
+  .hiddenmenu__link {
+    margin-bottom: 10px
+  }
+
+  .hiddenmenu__link a {
+    font-size: 13px
+  }
+}
+
+@media(max-width: 345px) {
+  .hamburger {
+    position: absolute;
+    margin-left: 150px
+  }
+
+  .hamburger::before {
+    display: none
+  }
+}
+
+@media(max-width: 1350px) {
   .navigation__list {
-    width: 459px;
+    width: 459px
   }
 
   .navigation__link {
-    font-size: 12px;
+    font-size: 12px
   }
 
   .navigation__logo {
-    width: 260px;
+    width: 260px
   }
 
   .navigation__logo-right {
-    width: 160px;
+    width: 160px
   }
 }
 
-@media (max-width: 1200px) {
-  // .navigation__list {
-  //   width: 334px;
-  // }
-
+@media(max-width: 1200px) {
   .navigation__logo {
-    width: 244px;
+    width: 244px
   }
 
   .navigation__logo-right {
-    width: 145px;
+    width: 145px
   }
 }
 
-@media (max-width: 1105px) {
+@media(max-width: 1105px) {
   .navigation__link {
-    font-size: 10px;
+    font-size: 10px
   }
-
-
 }
 
-@media (max-width: 1034px) {
+@media(max-width: 1034px) {
   .navigation__list {
-    display: none;
+    display: none
   }
 
   .navigation {
-    width: 90vw;
+    width: 90vw
   }
 
   .hamburger {
-    display: flex;
+    display: flex
   }
 }
 
-@media (max-width: 625px) {
+@media(max-width: 625px) {
   .navigation__logo {
-    width: 202px;
+    width: 202px
   }
 
   .navigation__logo-right {
-    display: none;
+    display: none
   }
-
-
 }
 
-@media (max-width: 400px) {
+@media(max-width: 400px) {
   .navigation__logo {
-    width: 163px;
+    width: 163px
   }
 }
