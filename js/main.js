@@ -1,7 +1,7 @@
 import '../css/main.css';
 
 
-window.onload = () => {
+
   //Hidden menu
   const hamburger = document.querySelector('.hamburger'),
     hiddenmenu = document.querySelector('.hiddenmenu'),
@@ -37,4 +37,3 @@ window.onload = () => {
       document.body.style.marginRight = `0px`;
     }
   });
-  }
